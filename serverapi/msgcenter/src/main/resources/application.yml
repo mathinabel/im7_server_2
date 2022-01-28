@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: im-api-msgcenter
+  rabbitmq:
+    host: 122.112.246.244
+    port: 5672
+    username: quyuanjin
+    password: qyj7468945
+
+server:
+  port: 10314
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://quyuanjin:614854010@120.79.178.226:10311/eureka/
+  instance:
+    prefer-ip-address: true

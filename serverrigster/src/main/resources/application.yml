@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: im-api-register
+
+
+server:
+  port: 10516
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://quyuanjin:614854010@120.79.178.226:10311/eureka/
+  instance:
+    prefer-ip-address: true
+

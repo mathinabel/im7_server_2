@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: im-eureka
+  security:
+    user:
+      name: quyuanjin
+      password: 614854010
+
+server:
+  port: 10311
+
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://quyuanjin:614854010@120.79.178.226:10311/eureka/
+  instance:
+    prefer-ip-address: true

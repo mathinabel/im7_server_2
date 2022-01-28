@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: im-zuul
+
+server:
+  port: 10312
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://quyuanjin:614854010@120.79.178.226:10311/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /imnetty/**
+      serviceId: im-netty
+    api-b:
+      path: /imapi/**
+      serviceId: im-api-msgcenter
+
+ribbon:
+  eureka:
+    enabled: true
